@@ -1,0 +1,15 @@
+---
+comments: true
+date: 2009-12-23 20:14:14
+layout: post
+slug: dartmouth-reunion
+title: Air-bear-chee
+wordpress_id: 958
+categories:
+- Brazil
+---
+
+The next day started with an amazing Yoga session I did with Ben and one of the guys who was working at the hostel from LA, Jason.  He was an amazing Yoga teacher, and we did X KIND OF YOGA .  I’ve done Yoga only once before, but this was by far one of the most intense mental experiences I’ve ever been through.  It was really powerful and I’d recommend anyone to give it a try.  It was much more focused on breathing and mental focus rather than physical positions.  After the Yoga I met up with Maya and Herbert, whose name is pronounced Air-bear-chee, which I just love saying, hence the title of the post.  Herbert lives in Itaim, which is a pretty affluent area of Sao Paulo.  Sao Paulo is interesting in that there are many affluent areas of the city that are still in the city but are big houses rather than apartments.  I’m not familiar with any other cities that have large housing developments in the heart of the city, and I’m not talking about things like brownstones in New York, or Compact houses in Pacific Heights in San Francisco, but full out mansions.  Herbert’s dad’s apartment was a nice small one bedroom place in a sort of condominium/hotel building.  Itaim has all sorts of nice little restaurants and shops and really high end bars/clubs and eateries.  We decided to get Sushi, but when we got to the restaurant they informed us they had ONLY salmon, so we got a giant sushi combo plate that had just salmon, it was kinda gross eating that much of one kind of fish.  The next day I convinced the girls to walk with me back to my hostel to do another Yoga session, and then we hit up the Mercado Municipal.  The market is held in what looks like a giant train station and is just awesome.  It has everything from fruit stands, to desert, to full pigs and fish to sandwiches.  I had a combo sandwich, pictured below, with steak, ham, bacon, egg, tomato, lettuce, cheese and which was definitely the best sandwich I have ever had.  The rest of the day and night passed without event and we decided to save up our energy for a big Friday night.  
+
+Friday night we bought some wine, cheese, Cachaca, sugar and limes so we could make Caipirinhas and have a nice pre-party before heading out.  I tried to get Tom Abreu to come out with us, but he had to bail due to a work obligation that ran late.  We got pretty soused and then headed out to Azucar which was a Samba club near our apt.  Although there are no wild stories from the night we did have a blast.  I did quite a lot of Samba dancing with both Herbert and Maya and we had fun despite sucking pretty badly.  Maya met a Brazilian guy who was moving to Boston to work for Bain and I went on a tirade telling how terrible Boston was and how sad I was that he had to leave Brazil for Boston.  Also, cultural norms being not the same in Brazil and America, this guy emailed her, literally 4 times between the time we went to bed and woke up 8 hours later.  Wild nights in Sao Paulo…
+[gallery]

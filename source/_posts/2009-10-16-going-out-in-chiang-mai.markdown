@@ -1,0 +1,14 @@
+---
+comments: true
+date: 2009-10-16 01:46:04
+layout: post
+slug: going-out-in-chiang-mai
+title: Going Out in Chiang Mai
+wordpress_id: 410
+categories:
+- Thailand
+---
+
+When you think of Thailand, and Bangkok, one of the main things that come to mind is the sex industry in Thailand.  Everywhere you go you see older western men with young hot Thai girls.  It is so common that Thai girls think you are weird if you are not with a Thai girl.  When you walk down streets with lots of bars all the Thai girls run into the street and grab your arm and try and drag you into the bars.  It’s a pretty strange phenomenon.  
+We started the night with dinner at our hotel with the Austrian girls and then went to a bar where we drank beers and played pool and darts.  I had a blast kicking it with the Austrian girls, learning some words in Austrian and laughing about their funny English.  We walked around for a while, got massages, had some drinks at some bars with some Thai girls and then headed to Spicy Bar which Pim had been to before the hiking trip and said was pretty wild.  Spicy bar lived up to it’s name.  It’s filled with Thai girls and westerners.  Contrary to what you would think, the girls are not prostitutes but seem to generally like Western guys and go home with them for free just like in New York!  Pim and I had a pretty wild night and he left with a girl probably around like 4AM but I was up until 7AM dancing and partying all night.  I met a Thai girl, haven’t a clue what her name was and we kicked it all night.  There was some other dude who seemed to be her boyfriend that she was dancing with all night as well.  At the end of the night she took me outside and explained that this dude was not her boyfriend, but was jealous and pissed because they were friends and he has a crush on her but she doesn’t like him like that.  Just like America again!  At this point it was 7AM, fully light out, and she wanted to go to another bar called lucky bar where everyone from Spicy bar was headed to as it was closing.  I was wasted and exhausted and told her she could come home with me then, but I was too tired to go to another bar.  So she started making out with her friend to get me jealous and try and convince me to change my mind.  I was too tired to be baited like that so I told her to have fun and hopped in a Taxi.  My hotel was called BMP but there are two BMP’s in Chiang Mai and I didn’t know which one was mine.  The driver took me to the first one and I didn’t think it was the right one.  Then we went to the second one and it wasn’t the right one either.  At this point I panicked a little bit wondering if there was a third one and I would never find it.  Then I looked at my key and showed it to the driver and he figured out it was the first one we went to that was the right one so he took me there.  I slept until 6 PM the night after and then met the rest of my group for dinner and drinks and then headed to bed early.
+[gallery]

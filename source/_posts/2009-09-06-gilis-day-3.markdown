@@ -1,0 +1,12 @@
+---
+comments: true
+date: 2009-09-06 08:59:21
+layout: post
+slug: gilis-day-3
+title: Gilis Day 3
+wordpress_id: 120
+categories:
+- Bali
+---
+
+None

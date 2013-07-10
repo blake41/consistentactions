@@ -19,8 +19,7 @@ $(function(){
     auto_join_text_ed: "",
     auto_join_text_ing: "",
     auto_join_text_reply: "",
-    auto_join_text_url: "",
-    loading_text: "loading tweets..."
+    auto_join_text_url: ""
   });
 
   var instagramElement = $('.instagram');
@@ -28,7 +27,7 @@ $(function(){
     userId: instagramElement.data('instagram-user'),
     clientId: instagramElement.data('instagram-client'),
     accessToken: instagramElement.data('instagram-access-token')
-  }
+  };
 
   $(".instagram").instagram({
     userId: instagram.userId,
@@ -66,18 +65,24 @@ $(function(){
   });
 
   var githubInfo = $("#gh_repos");
+  if(githubInfo.data('github-user')) {
 
-  github.showRepos({
-    user: githubInfo.data('github-user'),
-    count: githubInfo.data('github-repo-count'),
-    skip_forks: githubInfo.data('github-skip-forks'),
-    target: githubInfo 
-  });
+    github.showRepos({
+      user: githubInfo.data('github-user'),
+      count: githubInfo.data('github-repo-count'),
+      skip_forks: githubInfo.data('github-skip-forks'),
+      target: githubInfo
+    });
+  }
+
 
   var $container = $('#post-container');
   $container.imagesLoaded(function(){
     $container.masonry({
-      itemSelector : '.span4'
+      itemSelector : '.span4',
+      columnWidth: function( containerWidth ) {
+        return containerWidth / 3;
+      }
     });
   });
 

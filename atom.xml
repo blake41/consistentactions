@@ -4,7 +4,7 @@
   <title><![CDATA[Never Graduate]]></title>
   <link href="http://blake41.github.com/consistentactions/atom.xml" rel="self"/>
   <link href="http://blake41.github.com/consistentactions/"/>
-  <updated>2013-07-10T10:41:15-04:00</updated>
+  <updated>2013-07-10T15:29:10-04:00</updated>
   <id>http://blake41.github.com/consistentactions/</id>
   <author>
     <name><![CDATA[Blake Johnson]]></name>
@@ -12,6 +12,47 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[learning riak]]></title>
+    <link href="http://blake41.github.com/consistentactions/blog/2013/07/09/learning-riak/"/>
+    <updated>2013-07-09T10:15:00-04:00</updated>
+    <id>http://blake41.github.com/consistentactions/blog/2013/07/09/learning-riak</id>
+    <content type="html"><![CDATA[<p>The Flatiron School just started allowing us to order any programming book we want (as long as we explain why it might be useful), so I decided to take full advantage and explore the world of &#8220;NoSQL&#8221; by reading the Riak handbook over the long weekend.</p>
+
+<p>My general sense of people using &#8220;NoSQL&#8221; data stores was that in 95% of use cases a RDBMS made more sense. But, as long as Mongo stayed hip, people would blindly use it. I wanted to answer this question for myself: If your data is relational, does it make sense to use Mongo?</p>
+
+<p>This whole line of inquiry eventually led me to the CAP theorem and Riak.  Around 2000, Eric Brewer came out with his paper/conjecture called the CAP Theorem <a href="http://www.cs.berkeley.edu/~brewer/cs262b-2004/PODC-keynote.pdf">Brewer Paper</a>. The CAP Theorem was eventually proved and started a lot of the discussions around NoSQL. CAP Theroem essentially says that in any distributed system you can&#8217;t have consistency (c), availability (a), and partition tolerance (p) all at the same time: You can only choose two out of the three.</p>
+
+<p>Consistency means that if you have many nodes with the same data, and you read data from more than one at once, you should get the exact same result. Availability means that I should be able to read from all nodes at all times. Partition tolerance means that if nodes are physically separated from each other, usually by network problems, they should still be able to serve both reads and writes.</p>
+
+<p>The theorem states that since we assume that all computers will have network problems and be partitioned from the rest of the nodes at SOME point, you HAVE to pick P as one of the two of three in CAP you are allowed.  So then the question really is, do you compromise your availability or consistency?</p>
+
+<p>A simple example:</p>
+
+<p>Suppose you have three nodes, all with the same data. You try to write data to all three, but one node is unreachable. When you go to read data, you might get stale data from the node that missed the write earlier. If the system allows you to read from the stale node before it&#8217;s been synced up, the system has chosen availability of data as its focus.If it won&#8217;t give you the data until everything has been synced up, it&#8217;s chosen consistency and sacrificed availability.</p>
+
+<p>So, either you can get all data all of the time, and some of it might be wrong, or you get can all of the data most of the time and it&#8217;s always right.  According to the book, many developers claim that their systems are AC systems. This shows a fundamental misunderstanding of CAP. At some point, all systems will face network partitions, or a node will go down; you can&#8217;t choose P. The lack of P chooses you.</p>
+
+<p>So what does Riak choose?  The cool thing about Riak is that it let&#8217;s you decide. Riak was based on a paper that came out of Amazon in 2007 about Dynamo DB, Amazon&#8217;s internal &#8220;eventually consistent&#8221; database. Project Voldemort and CouchDB are also based on this idea of eventual consistency. Riak alows you to tune your needs of consistency and availability. Interally each group within Amazon has different business cases for when they would prefer to have their data be always available and possibly wrong, or always correct and sometimes unavailable.</p>
+
+<p>Let&#8217;s say you have a system with five nodes. You can specify that for any write to be successful it has to be written to W node.  The higher W value you pick the higher your consistency but the higher probability that a write might fail due to an unreachable node. As you lower W your data becomes more likely to successfully write but has a higher probability of being inconsistent - you&#8217;re more likely to read data from a node that hadn&#8217;t been updated. A higher W will also affect speed: The more nodes that must be written to, the higher the network latency.</p>
+
+<p>For reads, the logic is similar. If you need to read consistent data from R nodes for a read to be successful you increase your consistency but also increase the probability that a node is unreachable or has to wait for an update. As you lower your R, the probability a read is successful increases but the read is more likely to have inconsistent data. As you tune both R and W towards N you are lowering your ability to tolerate P (partitions). If R and W are 100%, you can no longer tolerate any partition.</p>
+
+<p>The most common scenario in real world applications is that a write will reach all the relevant nodes eventually, so that all nodes have the same data. Eventually, the data in the whole cluster will be consistent for this particular piece of data, no matter how long it takes, even after network partitions. This is the origin of the term eventual consistency.</p>
+
+<h2>Does Riak replace traditional RDBMS&#8217;s?</h2>
+
+<p>In a word, no.  Riak is really cool, and I&#8217;m excited to play with it, but it solves a very different use case than the traditional SQL databases.</p>
+
+<p>The Riak data model doesn&#8217;t really focus on objects that relate to each other. You can use linking to relate object, but there&#8217;s not really any way to query Riak in the way most web developers are used to. You can use map reduce to replicate that functionality, but you&#8217;d have to write ad hoc map reduce statements every time you needed data which is not really what it&#8217;s for.  Map reduce is really for batch processing of data, not real-time application access to the database. You can also add Lucene to Riak to do full text search of data, but again, this isn&#8217;t really what we want.</p>
+
+<p>The simplest example of why Riak doesn&#8217;t cut it is there&#8217;s really no notion of a collection of Objects. Riak has buckets, but this is really just a string key they add to your actual key. You can&#8217;t ask Riak for all the things in X bucket. It still has to sort through every key in the db to see if it matches the string &#8220;X&#8221;. For this same reason, you can&#8217;t count all the objects in a bucket. Riak does have the notion of relationships through &#8220;linking&#8221; but this really works more like a graph db than traditional relationships as we think of them in the SQL world.</p>
+
+<p>The best way to think of Riak is a key-value store on steroids. It deals really well with distributed storage and replication, fails gracefully, and allows you to tune the AC part of CAP to your heart&#8217;s content.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Programming Growth List of Achievements]]></title>

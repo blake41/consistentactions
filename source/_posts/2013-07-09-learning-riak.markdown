@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "learning riak"
-published: false
+published: true
 date: 2013-07-09 10:15
 comments: true
 categories: 

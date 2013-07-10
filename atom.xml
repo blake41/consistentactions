@@ -1,160 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
 
-
-<!DOCTYPE html>
-<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
-<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
-<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
-<head>
-  <meta charset="utf-8">
-  <title>Never Graduate</title>
-  <meta name="author" content="Blake Johnson">
-  <link rel="author" href="humans.txt">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-
-  
-    
-  
-  <meta name="description" content=" ">
-  
-  <!-- http://t.co/dKP3o1e -->
-  <meta name="HandheldFriendly" content="True">
-  <meta name="MobileOptimized" content="320">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title><![CDATA[Never Graduate]]></title>
+  <link href="http://blake41.github.com/consistentactions/atom.xml" rel="self"/>
+  <link href="http://blake41.github.com/consistentactions/"/>
+  <updated>2013-07-10T10:41:15-04:00</updated>
+  <id>http://blake41.github.com/consistentactions/</id>
+  <author>
+    <name><![CDATA[Blake Johnson]]></name>
+    <email><![CDATA[blake41@gmail.com]]></email>
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
 
   
-  <link rel="canonical" href="http://blake41.github.com/consistentactions/">
-  <link href="/favicon.png" rel="icon">
-  <link href='http://fonts.googleapis.com/css?family=Cantarell' rel='stylesheet' type='text/css'>
-  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
-  <link href="/atom.xml" rel="alternate" title="Never Graduate" type="application/atom+xml">
-  <meta name="og:type" content="website" />
-  <meta name="og:site_name" content="Never Graduate" />
-  <meta name="og:title" content="Never Graduate" />
-  <meta name="og:description" content=" " />
-  <meta name="og:url" content="http://blake41.github.com/consistentactions/index.html"/>
-  <meta name="url" content="http://blake41.github.com/consistentactions/index.html">
-  
-  <meta name="distribution" content="global">
-  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
-<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
-<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
-
-  
-
-</head>
-
-<body   >
-  <div id="front-wrapper">
-  <div id="hero">
-    <div id="hero-inner" class="container">
-      <div class="span10 offset1">
-  <h1>
-    I&#8217;m <em>Blake Johnson</em>.<br>
-    A code slinging, wave shredding, hacker schooling, life enthusiast.  Don&#8217;t call it a comeback.  I&#8217;ve been here for years.
-  </h1>
-</div>
-
-    </div>
-  </div>
-  <section id="sub-hero">
-    <div class="container">
-      <div class="row">
-  <div class="span4">
-    <h2>about me</h2>
-<p>On a lifelong journey to become a master software developer.  I&#8217;m based in Brooklyn and have been in NYC since 2007 with the exception of a yearlong world trip in 2009-2010.  I quit my job in May 2011 to teach myself Ruby on Rails and have been obsessed with programming ever since.</p>
-
-  </div>
-  <div class="span6">
-    
-<h2>recent public projects</h2>
-<dl id="gh_repos" class="dl-horizontal" data-github-user="blake41" data-github-repo-count="5" data-github-skip-forks="true">
-  <dd class="loading">Status updating&#8230;</dd>
-</dl>
-<script src="/javascripts/github.js" type="text/javascript"> </script>
-<script src="/javascripts/libs/jXHR.js" type="text/javascript"> </script>
-
-
-  </div>
-  <div class="span2">
-    <h2>found on</h2>
-
-<a href="https://github.com/blake41/" rel="tooltip" title="Github"><img class="social_icon" title="Github" alt="github icon" src="/images/glyphicons_381_github.png"></a>
-
-
-
-
-
-<a href="http://www.linkedin.com/in/blake41" rel="tooltip" title="Linkedin"><img class="social_icon" title="Linkedin" alt="Linkedin icon" src="/images/glyphicons_377_linked_in.png"></a>
-
-
-
-<a href="http://twitter.com/blake41" rel="tooltip" title="Twitter"><img class="social_icon" title="Twitter" alt="Twitter icon" src="/images/glyphicons_391_twitter_t.png"></a>
-
-
-
-
-
-<a href="http://www.quora.com/blake41" rel="tooltip" title="Quora"><img class="social_icon" title="Quora" alt="Quora icon" src="/images/glyphicons_385_quora.png"></a>
-
-
-
-<h2>contact at</h2>
-<a href="mailto:blake41@gmail.com">blake41@gmail.com</a>
-
-
-  </div>
-</div>
-
-    </div>
-  </section>
-  <div class="container">
-    <div class="row" id="post-container">
-    
-    
-    
-      <article class="span4">
-        <div class="article-format">
-
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2012/12/05/programming-growth-list-of-achievements/">Programming Growth List of Achievements</a></h1>
-    
-    
-      <p class="meta">
-        
-  
-
-
-  
-    <span class="byline author vcard">by <span class="fn">Blake Johnson</span></span>
-  
-
- - 
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2012-12-05T09:56:42-05:00" pubdate data-updated="true">Dec 5<span>th</span>, 2012</time> - 
-        
-
-
-        
-         | <a href="/blog/2012/12/05/programming-growth-list-of-achievements/#disqus_thread">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>I&#8217;ve been looking for a roadmap of how to become a better developer for a long time.  This is the first thing I&#8217;ve come across that gets at what I&#8217;m looking for.</p>
+  <entry>
+    <title type="html"><![CDATA[Programming Growth List of Achievements]]></title>
+    <link href="http://blake41.github.com/consistentactions/blog/2012/12/05/programming-growth-list-of-achievements/"/>
+    <updated>2012-12-05T09:56:42-05:00</updated>
+    <id>http://blake41.github.com/consistentactions/blog/2012/12/05/programming-growth-list-of-achievements</id>
+    <content type="html"><![CDATA[<p>I&#8217;ve been looking for a roadmap of how to become a better developer for a long time.  This is the first thing I&#8217;ve come across that gets at what I&#8217;m looking for.</p>
 
 <p>Copied from http://jasonrudolph.com/blog/2011/08/09/programming-achievements-how-to-level-up-as-a-developer/</p>
 
@@ -253,59 +117,15 @@
 <p>Or, fork it and mark off the achievements you&#8217;ve already conquered. You might even flag the one that you&#8217;re currently working on. (For example, check out these forks from <a href="https://gist.github.com/1134309">Justin Blake</a>, <a href="https://gist.github.com/1134276">Pierre Chapuis</a>, and <a href="https://gist.github.com/1134044">Yann Esposito</a>.) [E]</p>
 
 <p>Or just sound off in the comments: What experiences have made you a better developer? And what achievement will you unlock next?</p>
-</div>
+]]></content>
+  </entry>
   
-  
-
-
-</div>
-
-      </article>
-    
-    
-      <article class="span4">
-        <div class="article-format">
-
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2012/12/05/ten-commandments-of-programming/">Ten Commandments of Programming</a></h1>
-    
-    
-      <p class="meta">
-        
-  
-
-
-  
-    <span class="byline author vcard">by <span class="fn">Blake Johnson</span></span>
-  
-
- - 
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2012-12-05T09:51:24-05:00" pubdate data-updated="true">Dec 5<span>th</span>, 2012</time> - 
-        
-
-
-        
-         | <a href="/blog/2012/12/05/ten-commandments-of-programming/#disqus_thread">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>Via http://www.kitchensoap.com/2012/10/25/on-being-a-senior-engineer/</p>
+  <entry>
+    <title type="html"><![CDATA[Ten Commandments of Programming]]></title>
+    <link href="http://blake41.github.com/consistentactions/blog/2012/12/05/ten-commandments-of-programming/"/>
+    <updated>2012-12-05T09:51:24-05:00</updated>
+    <id>http://blake41.github.com/consistentactions/blog/2012/12/05/ten-commandments-of-programming</id>
+    <content type="html"><![CDATA[<p>Via http://www.kitchensoap.com/2012/10/25/on-being-a-senior-engineer/</p>
 
 <p>via Programming, found on <a href="https://twitter.com/wyattdanger">@wyattdanger</a>‘s blog <a href="http://blog.stephenwyattbush.com/2012/04/07/dad-and-the-ten-commandments-of-egoless-programming">post</a> on receiving advice from his dad:</p>
 
@@ -322,59 +142,15 @@
 <li><p><strong>Critique code instead of people – be kind to the coder, not to the code.</strong> As much as possible, make all of your comments positive and oriented to improving the code. Relate comments to local standards, program specs, increased performance, etc.</p></li>
 </ol>
 
-</div>
+]]></content>
+  </entry>
   
-  
-
-
-</div>
-
-      </article>
-    
-    
-      <article class="span4">
-        <div class="article-format">
-
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2012/10/21/becoming-better-means-facing-your-fears/">Becoming Better Means Facing Your Fears</a></h1>
-    
-    
-      <p class="meta">
-        
-  
-
-
-  
-    <span class="byline author vcard">by <span class="fn">Blake Johnson</span></span>
-  
-
- - 
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2012-10-21T19:11:03-04:00" pubdate data-updated="true">Oct 21<span>st</span>, 2012</time> - 
-        
-
-
-        
-         | <a href="/blog/2012/10/21/becoming-better-means-facing-your-fears/#disqus_thread">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>We did an interesting exercise  the other day at Hacker School.  We sat in a group and wrote down all the things that scare us about programming.  The list ended up being something like 50 items long.  For a bunch of really smart and relatively successful programmers, we are steeped in fear.  And it&#8217;s that fear that keeps us from getting better, rather than a lack of intelligence.  It&#8217;s fear that keeps us from reaching just about any goal or realizing any potential within us.  It amazes me that despite facing my fears day in and day out for the past 18 months of this programming journey, I still find myself avoiding things that scare me.  When things don&#8217;t make sense, rather than slowing down and attacking the fuzziness, I skip ahead so I don&#8217;t have to confront that which challenges me.  Yes of course I get it, I just don&#8217;t want to write any sample code to verify that I get it because that might irrefutably prove that I DONT FUCKING GET IT.  How many hours, weeks, months have been wasted because I didn&#8217;t buckle down and attack the things that were fuzzy.  I have forced myself to always come back to things that I don&#8217;t understand, but have often taken huge breaks in between swings at those problems because facing those demons is more uncomfortable than just about any other thing I could do in any given day.  And yet leaning into the pain and fear is where all the value is.  It&#8217;s how we become better programmers.  It&#8217;s how we become better at anything in life.  I&#8217;ve watched friends do everything but the one thing that would get them to their stated goal.  Just pick up the phone and call her already&#8230;And yet despite the myriad of demons I&#8217;ve confronted over the last 10 years, there&#8217;s still that Lizard brain telling me that I can&#8217;t do it.  That I&#8217;m stupid, and not smart enough to be doing this.  That one of these days someone is going to pull back the curtain and reveal the scared little boy who has been pretending to be something he&#8217;s not.  And THEN I&#8217;ll be sorry.  Therein lies the value of hacker school.  They&#8217;ve created an environment where the stated goal is to pull the curtain back, and to let the sun shine on our hideous naked bodies.  We can celebrate the fact that we don&#8217;t know, and then get to the knowing.  We can all be at that point freshman year of college where no one knew anyone and we all were scared little kids and confront these demons together.  If Hacker School&#8217;s value was only that, it would be worth it.  Hacker School&#8217;s value far exceeds just that though.  They have created an environment that&#8217;s no only safe to learn, but where learning flourishes.  One thing that is beaten into us is focus.  Work on one thing until you understand it, and don&#8217;t stop until you understand it.  And while you&#8217;re trying to understand it, make sure you know what it is you are trying to understand, and that what you are doing to understand it is a good way to get that understanding.  Focus on one thing, and push through the fuzziness until you get to clarity.</p>
+  <entry>
+    <title type="html"><![CDATA[Becoming Better Means Facing Your Fears]]></title>
+    <link href="http://blake41.github.com/consistentactions/blog/2012/10/21/becoming-better-means-facing-your-fears/"/>
+    <updated>2012-10-21T19:11:03-04:00</updated>
+    <id>http://blake41.github.com/consistentactions/blog/2012/10/21/becoming-better-means-facing-your-fears</id>
+    <content type="html"><![CDATA[<p>We did an interesting exercise  the other day at Hacker School.  We sat in a group and wrote down all the things that scare us about programming.  The list ended up being something like 50 items long.  For a bunch of really smart and relatively successful programmers, we are steeped in fear.  And it&#8217;s that fear that keeps us from getting better, rather than a lack of intelligence.  It&#8217;s fear that keeps us from reaching just about any goal or realizing any potential within us.  It amazes me that despite facing my fears day in and day out for the past 18 months of this programming journey, I still find myself avoiding things that scare me.  When things don&#8217;t make sense, rather than slowing down and attacking the fuzziness, I skip ahead so I don&#8217;t have to confront that which challenges me.  Yes of course I get it, I just don&#8217;t want to write any sample code to verify that I get it because that might irrefutably prove that I DONT FUCKING GET IT.  How many hours, weeks, months have been wasted because I didn&#8217;t buckle down and attack the things that were fuzzy.  I have forced myself to always come back to things that I don&#8217;t understand, but have often taken huge breaks in between swings at those problems because facing those demons is more uncomfortable than just about any other thing I could do in any given day.  And yet leaning into the pain and fear is where all the value is.  It&#8217;s how we become better programmers.  It&#8217;s how we become better at anything in life.  I&#8217;ve watched friends do everything but the one thing that would get them to their stated goal.  Just pick up the phone and call her already&#8230;And yet despite the myriad of demons I&#8217;ve confronted over the last 10 years, there&#8217;s still that Lizard brain telling me that I can&#8217;t do it.  That I&#8217;m stupid, and not smart enough to be doing this.  That one of these days someone is going to pull back the curtain and reveal the scared little boy who has been pretending to be something he&#8217;s not.  And THEN I&#8217;ll be sorry.  Therein lies the value of hacker school.  They&#8217;ve created an environment where the stated goal is to pull the curtain back, and to let the sun shine on our hideous naked bodies.  We can celebrate the fact that we don&#8217;t know, and then get to the knowing.  We can all be at that point freshman year of college where no one knew anyone and we all were scared little kids and confront these demons together.  If Hacker School&#8217;s value was only that, it would be worth it.  Hacker School&#8217;s value far exceeds just that though.  They have created an environment that&#8217;s no only safe to learn, but where learning flourishes.  One thing that is beaten into us is focus.  Work on one thing until you understand it, and don&#8217;t stop until you understand it.  And while you&#8217;re trying to understand it, make sure you know what it is you are trying to understand, and that what you are doing to understand it is a good way to get that understanding.  Focus on one thing, and push through the fuzziness until you get to clarity.</p>
 
 <p>Most people tend to attribute positive things about themselves to internal characteristics, and negative things to environmental or circumstantial factors.  They then reverse it when looking at other people.  I think the reality is that environmental factors play a significantly larger role than any of us would like to imagine (great speech by Michael Lewis on this topic http://www.youtube.com/watch?v=CiQ_T5C3hIM).  Why most of us are where we are today be it &#8220;successful&#8221; or not is largely a result of the environments we&#8217;ve been placed in.  I did well in school because my parents expected that I would do well in school and would make my life a living hell if that did not happen.  Had I been left to my own devices I would have optimized my life for the short term (probably a week to week calculus when you&#8217;re younger) rather than a long term that at least pointed towards college.  It&#8217;s pretty incredible to sit here at 29 and look back at how stupid I was at 18, or 16, or 14.  At this point in my life, I feel like I&#8217;ve started to figure things out, which scares me a little bit because when I look back at the times in my life where I thought I had it figured out, it was when I was stupidest.  Donald Rumsfeld famously said, &#8220;there are known knowns, known unknowns and unknown unknowns&#8221;.  When you&#8217;re young, that graph probably looks like 98% unknown unknowns.  You can&#8217;t even conceive of how monumentally stupid you really are.  As you start to get a little bit of knowledge, you start to feel like you&#8217;ve got it figured out, hence the expression &#8220;a little knowledge is a dangerous thing&#8221;.  I feel immeasurably lucky to have made it this far in life without monumentally fucking my life up.  Thank god for parents who forced me to do shit I didn&#8217;t want to do until I reached a point where I could figure that out on my own with a much lower risk.  I wish there was a way for young people to go out and explore the world BEFORE they waste so much money on college.  You have such little idea about the world before you start to work it is almost impossible to derive any value from the things laid at your feet at such a young age (and by that I mean us privileged kids).</p>
 
@@ -383,59 +159,15 @@
 <p>-Lester in American Beauty</p>
 
 <p>That said, It&#8217;s never too late to change your life.  Education is wasted on the young, but once you start to grow up, you start to get a sense of how you might want to spend your life.  For many people this comes after hundreds of thousands of dollars have been wasted on their education.  They feel trapped, like it&#8217;s too late to change.  It&#8217;s not too late to change.  It&#8217;s never too late to change.  I started this journey at 27 and am now 29 years old.  Ancient in programming years, and I have far to go to reach the promised land.  Every step of the journey has been tough, and yet there&#8217;s never been a more rewarding time in my life.</p>
-</div>
+]]></content>
+  </entry>
   
-  
-
-
-</div>
-
-      </article>
-    
-    
-      <article class="span4">
-        <div class="article-format">
-
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2012/03/01/thing-im-lovin-hat-tip-gvitty-in-the-city/">Things I&#8217;m Lovin - Hat Tip Gvitty in the City</a></h1>
-    
-    
-      <p class="meta">
-        
-  
-
-
-  
-    <span class="byline author vcard">by <span class="fn">Blake Johnson</span></span>
-  
-
- - 
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2012-03-01T23:19:04-05:00" pubdate data-updated="true">Mar 1<span>st</span>, 2012</time> - 
-        
-
-
-        
-         | <a href="/blog/2012/03/01/thing-im-lovin-hat-tip-gvitty-in-the-city/#disqus_thread">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>This post is an homage to Geoff Vitt who has been inspiring me with his I&#8217;m lovin posts. It was also inspired by another fantastic TED talk (http://escapethecity.org/resources/766-shawn-achor-the-happy-secret-to-better-work).</p>
+  <entry>
+    <title type="html"><![CDATA[Things I'm Lovin - Hat tip Gvitty in the city]]></title>
+    <link href="http://blake41.github.com/consistentactions/blog/2012/03/01/thing-im-lovin-hat-tip-gvitty-in-the-city/"/>
+    <updated>2012-03-01T23:19:04-05:00</updated>
+    <id>http://blake41.github.com/consistentactions/blog/2012/03/01/thing-im-lovin-hat-tip-gvitty-in-the-city</id>
+    <content type="html"><![CDATA[<p>This post is an homage to Geoff Vitt who has been inspiring me with his I&#8217;m lovin posts. It was also inspired by another fantastic TED talk (http://escapethecity.org/resources/766-shawn-achor-the-happy-secret-to-better-work).</p>
 
 <p>So here&#8217;s my list of things I&#8217;m lovin:</p>
 
@@ -460,59 +192,15 @@
 <li><p>Taking the long view for the first time in my life.  Hat tip ceonyc http://www.thisisgoingtobebig.com/blog/2011/12/5/reverse-engineering-a-career.html</p></li>
 </ul>
 
-</div>
+]]></content>
+  </entry>
   
-  
-
-
-</div>
-
-      </article>
-    
-    
-      <article class="span4">
-        <div class="article-format">
-
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2012/01/02/crush-it/">Crush It</a></h1>
-    
-    
-      <p class="meta">
-        
-  
-
-
-  
-    <span class="byline author vcard">by <span class="fn">Blake Johnson</span></span>
-  
-
- - 
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2012-01-02T05:20:22-05:00" pubdate data-updated="true">Jan 2<span>nd</span>, 2012</time> - 
-        
-
-
-        
-         | <a href="/blog/2012/01/02/crush-it/#disqus_thread">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>2012 is the first year I feel like I am ready to jump into with both feet. To steal Brett Martin&#8217;s word, I&#8217;ve never felt more ready to crush it. 2011 was the year I finally taught myself how to program, and to quote Hilary Mason of Bitly, &#8220;teaching someone to program is like giving them superpowers&#8221;. I&#8217;ve never felt so empowered. I go to sleep every day feeling like I used to when I was a kid the night before Christmas, barely able to contain my excitement for the day awaiting me. The world seems filled with limitless possibilities. However, I want to take some time and reflect on how I got to where I am today.</p>
+  <entry>
+    <title type="html"><![CDATA[Crush It]]></title>
+    <link href="http://blake41.github.com/consistentactions/blog/2012/01/02/crush-it/"/>
+    <updated>2012-01-02T05:20:22-05:00</updated>
+    <id>http://blake41.github.com/consistentactions/blog/2012/01/02/crush-it</id>
+    <content type="html"><![CDATA[<p>2012 is the first year I feel like I am ready to jump into with both feet. To steal Brett Martin&#8217;s word, I&#8217;ve never felt more ready to crush it. 2011 was the year I finally taught myself how to program, and to quote Hilary Mason of Bitly, &#8220;teaching someone to program is like giving them superpowers&#8221;. I&#8217;ve never felt so empowered. I go to sleep every day feeling like I used to when I was a kid the night before Christmas, barely able to contain my excitement for the day awaiting me. The world seems filled with limitless possibilities. However, I want to take some time and reflect on how I got to where I am today.</p>
 
 <p>I&#8217;ll never forget my senior winter at Dartmouth. Russ, Griffin and Darnell were all living in NYC ostensibly living the life that everyone dreams of. Griffin was interning at some bulge bracket bank I think doing ibanking, and Russ and Darnell were working at some generic corporate law firm. They were making lots of money, and enjoying all that the best city in the world had to offer. And yet when I talked to them about it, they didn&#8217;t seem very happy. In fact almost no one I knew who lived in NYC post Dartmouth seemed happy. Plenty of people had &#8220;great jobs&#8221; in finance and all the other industries we are programmed to aspire to from birth. Why didn&#8217;t anyone like their jobs? We were the best and the brightest, and could have any jobs we wanted, and this was the best the world had to offer&#8230;I couldn&#8217;t help thinking, is this it?</p>
 
@@ -525,59 +213,15 @@
 <p>I was incredibly lucky to get hired by Byron and Jeb at Proto software which was one of the best experiences of my life. Proto infected me with both the startup and programming bugs. Luckily I had picked up SQL at Hawaiian Telcom, and at Proto I mastered Excel, the basic concepts of programming and application/software development. I was also lucky enough to meet the Abadi&#8217;s which turned into a 2 year freelance consulting gig which allowed me the freedom to take an almost year long world trip.</p>
 
 <p>I&#8217;m amazed that at 26 I had the wherewithall to negotiate an arrangement that allowed me the freedom to do all the things I had dreamed of doing my whole life. Over the course of a year I visited almost every &#8220;great&#8221; city of the world, and touched every continent except Africa and Antartica. It&#8217;s hard to believe what I&#8217;ve achieved since I left the &#8220;tiny&#8221; town of West Hartford almost 10 years ago. It&#8217;s even harder to believe that I&#8217;ve done so with so many nagging insecurities.</p>
-</div>
+]]></content>
+  </entry>
   
-  
-
-
-</div>
-
-      </article>
-    
-    
-      <article class="span4">
-        <div class="article-format">
-
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2011/05/09/how-to-be-funny/">How to Be Funny</a></h1>
-    
-    
-      <p class="meta">
-        
-  
-
-
-  
-    <span class="byline author vcard">by <span class="fn">Blake Johnson</span></span>
-  
-
- - 
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2011-05-09T14:56:41-04:00" pubdate data-updated="true">May 9<span>th</span>, 2011</time> - 
-        
-
-
-        
-         | <a href="/blog/2011/05/09/how-to-be-funny/#disqus_thread">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>From Dilbert&#8230;</p>
+  <entry>
+    <title type="html"><![CDATA[How To Be Funny]]></title>
+    <link href="http://blake41.github.com/consistentactions/blog/2011/05/09/how-to-be-funny/"/>
+    <updated>2011-05-09T14:56:41-04:00</updated>
+    <id>http://blake41.github.com/consistentactions/blog/2011/05/09/how-to-be-funny</id>
+    <content type="html"><![CDATA[<p>From Dilbert&#8230;</p>
 
 <p>So here&#8217;s your humor toolbox:</p>
 
@@ -590,59 +234,15 @@
 <li><p>Use sarcasm and exaggeration if necessary.</p></li>
 </ol>
 
-</div>
+]]></content>
+  </entry>
   
-  
-
-
-</div>
-
-      </article>
-    
-    
-      <article class="span4">
-        <div class="article-format">
-
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2011/01/11/life-changing-reading/">Life Changing Reading</a></h1>
-    
-    
-      <p class="meta">
-        
-  
-
-
-  
-    <span class="byline author vcard">by <span class="fn">Blake Johnson</span></span>
-  
-
- - 
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2011-01-11T11:01:29-05:00" pubdate data-updated="true">Jan 11<span>th</span>, 2011</time> - 
-        
-
-
-        
-         | <a href="/blog/2011/01/11/life-changing-reading/#disqus_thread">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>I&#8217;ve been doing a lot of self improvement reading, in my attempt to give my life direction in the post travel era.</p>
+  <entry>
+    <title type="html"><![CDATA[Life Changing Reading]]></title>
+    <link href="http://blake41.github.com/consistentactions/blog/2011/01/11/life-changing-reading/"/>
+    <updated>2011-01-11T11:01:29-05:00</updated>
+    <id>http://blake41.github.com/consistentactions/blog/2011/01/11/life-changing-reading</id>
+    <content type="html"><![CDATA[<p>I&#8217;ve been doing a lot of self improvement reading, in my attempt to give my life direction in the post travel era.</p>
 
 <p>If you don&#8217;t like self-help or business books, skip this post. However, if you are open to the possibility of growth through reading and altering your behavior, these books all have the power to change your life. (In no particular order)</p>
 
@@ -660,171 +260,7 @@
 <p>In a separate category of good, but not necessarily epic
 1. Never Eat Alone - Keith Ferazzi
 2. The 4 Hour WW - Tim Ferris</p>
-</div>
+]]></content>
+  </entry>
   
-  
-
-
-</div>
-
-      </article>
-    
-    </div>
-      <div class="row">
-        <ul class="pager">
-          
-          
-        </ul>
-      </div>
-  </div>
-</div>
-
-
-  <div id="footer-widgets">
-  <div class="container">
-    <div class="row">
-  <div class="span3">
-    <h2>recent posts</h2>
-    <ul class="recent_posts">
-      
-        <li>
-          <a href="/blog/2012/12/05/programming-growth-list-of-achievements/">Programming Growth List of Achievements</a>
-        </li>
-      
-        <li>
-          <a href="/blog/2012/12/05/ten-commandments-of-programming/">Ten Commandments of Programming</a>
-        </li>
-      
-        <li>
-          <a href="/blog/2012/10/21/becoming-better-means-facing-your-fears/">Becoming Better Means Facing Your Fears</a>
-        </li>
-      
-        <li>
-          <a href="/blog/2012/03/01/thing-im-lovin-hat-tip-gvitty-in-the-city/">Things I'm Lovin - Hat tip Gvitty in the city</a>
-        </li>
-      
-        <li>
-          <a href="/blog/2012/01/02/crush-it/">Crush It</a>
-        </li>
-      
-    </ul>
-    <h2><a href="/blog/archives">archives</a></h2>
-  </div>
-  <div class="span3">
-    
-<h2>instagram</h2>
-<div class="instagram" data-instagram-user="blake41" data-instagram-client="" data-instagram-access-token=""></div>
-<button id="instabutton" class="btn">more</button>
-
-
-  </div>
-  <div class="span4">
-    
-<h2>twitter</h2>
-<a href="https://twitter.com/blake41" class="twitter-follow-button" data-show-count="true" data-lang="en">Follow @blake41</a>
-<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-<div class="tweet" data-twitter-user="blake41">
-</div>
-
-
-  </div>
-  <div class="span2">
-    <h2>found on</h2>
-
-<a href="https://github.com/blake41/" rel="tooltip" title="Github"><img class="social_icon" title="Github" alt="github icon" src="/images/glyphicons_381_github.png"></a>
-
-
-
-
-
-<a href="http://www.linkedin.com/in/blake41" rel="tooltip" title="Linkedin"><img class="social_icon" title="Linkedin" alt="Linkedin icon" src="/images/glyphicons_377_linked_in.png"></a>
-
-
-
-<a href="http://twitter.com/blake41" rel="tooltip" title="Twitter"><img class="social_icon" title="Twitter" alt="Twitter icon" src="/images/glyphicons_391_twitter_t.png"></a>
-
-
-
-
-
-<a href="http://www.quora.com/blake41" rel="tooltip" title="Quora"><img class="social_icon" title="Quora" alt="Quora icon" src="/images/glyphicons_385_quora.png"></a>
-
-
-
-<h2>contact at</h2>
-<a href="mailto:blake41@gmail.com">blake41@gmail.com</a>
-
-
-  </div>
-</div>
-
-  </div>
-</div>
-<footer class="footer">
-  <div class="container">
-    <p class="pull-left">
-  <a href="/">Never Graduate</a>
-  - Copyright &copy; 2013 - Blake Johnson
-</p>
-<p class="pull-right">
-  <span>Powered by <a href="http://octopress.org/">Octopress</a>.</span>
-  
-    <span>Designed by <a href="http://www.AdrianArtiles.com">Adrian Artiles</a>.</span>
-  
-</p>
-
-  </div>
-</footer>
-
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>
-<script>window.jQuery || document.write('<script src="/javascripts/libs/jquery-1.7.2.min.js" type="text/javascript"><\/script>')</script>
-<script src="/javascripts/libs/bootstrap.min.js" type="text/javascript"></script>
-<script src="/javascripts/jquery.tweet.js" type="text/javascript"></script>
-<script src="/javascripts/jquery.instagram.js" type="text/javascript"></script>
-<script src="/javascripts/libs/jquery.masonry.min.js" type="text/javascript"></script>
-<script src="/javascripts/custom.js" type="text/javascript"></script>
-
-
-<script type="text/javascript">
-      var disqus_shortname = 'blake41';
-      
-        
-        var disqus_script = 'count.js';
-      
-    (function () {
-      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-      dsq.src = 'http://' + disqus_shortname + '.disqus.com/' + disqus_script;
-      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-    }());
-</script>
-
-
-
-<div id="fb-root"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) {return;}
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/en_US/all.js#appId=212934732101925&xfbml=1";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
-
-
-
-
-
-  <script type="text/javascript">
-    (function(){
-      var twitterWidgets = document.createElement('script');
-      twitterWidgets.type = 'text/javascript';
-      twitterWidgets.async = true;
-      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
-      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
-    })();
-  </script>
-
-
-
-
-</body>
-</html>
+</feed>

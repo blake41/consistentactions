@@ -158,37 +158,12 @@
 
 <p>My general sense of people using &#8220;NoSQL&#8221; data stores was that in 95% of use cases a RDBMS made more sense. But, as long as Mongo stayed hip, people would blindly use it. I wanted to answer this question for myself: If your data is relational, does it make sense to use Mongo?</p>
 
-<p>This whole line of inquiry eventually led me to the CAP theorem and Riak.  Around 2000, Eric Brewer came out with his paper/conjecture called the CAP Theorem <a href="http://www.cs.berkeley.edu/~brewer/cs262b-2004/PODC-keynote.pdf">Brewer Paper</a>. The CAP Theorem was eventually proved and started a lot of the discussions around NoSQL. CAP Theroem essentially says that in any distributed system you can&#8217;t have consistency (c), availability (a), and partition tolerance (p) all at the same time: You can only choose two out of the three.</p>
-
-<p>Consistency means that if you have many nodes with the same data, and you read data from more than one at once, you should get the exact same result. Availability means that I should be able to read from all nodes at all times. Partition tolerance means that if nodes are physically separated from each other, usually by network problems, they should still be able to serve both reads and writes.</p>
-
-<p>The theorem states that since we assume that all computers will have network problems and be partitioned from the rest of the nodes at SOME point, you HAVE to pick P as one of the two of three in CAP you are allowed.  So then the question really is, do you compromise your availability or consistency?</p>
-
-<p>A simple example:</p>
-
-<p>Suppose you have three nodes, all with the same data. You try to write data to all three, but one node is unreachable. When you go to read data, you might get stale data from the node that missed the write earlier. If the system allows you to read from the stale node before it&#8217;s been synced up, the system has chosen availability of data as its focus.If it won&#8217;t give you the data until everything has been synced up, it&#8217;s chosen consistency and sacrificed availability.</p>
-
-<p>So, either you can get all data all of the time, and some of it might be wrong, or you get can all of the data most of the time and it&#8217;s always right.  According to the book, many developers claim that their systems are AC systems. This shows a fundamental misunderstanding of CAP. At some point, all systems will face network partitions, or a node will go down; you can&#8217;t choose P. The lack of P chooses you.</p>
-
-<p>So what does Riak choose?  The cool thing about Riak is that it let&#8217;s you decide. Riak was based on a paper that came out of Amazon in 2007 about Dynamo DB, Amazon&#8217;s internal &#8220;eventually consistent&#8221; database. Project Voldemort and CouchDB are also based on this idea of eventual consistency. Riak alows you to tune your needs of consistency and availability. Interally each group within Amazon has different business cases for when they would prefer to have their data be always available and possibly wrong, or always correct and sometimes unavailable.</p>
-
-<p>Let&#8217;s say you have a system with five nodes. You can specify that for any write to be successful it has to be written to W node.  The higher W value you pick the higher your consistency but the higher probability that a write might fail due to an unreachable node. As you lower W your data becomes more likely to successfully write but has a higher probability of being inconsistent - you&#8217;re more likely to read data from a node that hadn&#8217;t been updated. A higher W will also affect speed: The more nodes that must be written to, the higher the network latency.</p>
-
-<p>For reads, the logic is similar. If you need to read consistent data from R nodes for a read to be successful you increase your consistency but also increase the probability that a node is unreachable or has to wait for an update. As you lower your R, the probability a read is successful increases but the read is more likely to have inconsistent data. As you tune both R and W towards N you are lowering your ability to tolerate P (partitions). If R and W are 100%, you can no longer tolerate any partition.</p>
-
-<p>The most common scenario in real world applications is that a write will reach all the relevant nodes eventually, so that all nodes have the same data. Eventually, the data in the whole cluster will be consistent for this particular piece of data, no matter how long it takes, even after network partitions. This is the origin of the term eventual consistency.</p>
-
-<h2>Does Riak replace traditional RDBMS&#8217;s?</h2>
-
-<p>In a word, no.  Riak is really cool, and I&#8217;m excited to play with it, but it solves a very different use case than the traditional SQL databases.</p>
-
-<p>The Riak data model doesn&#8217;t really focus on objects that relate to each other. You can use linking to relate object, but there&#8217;s not really any way to query Riak in the way most web developers are used to. You can use map reduce to replicate that functionality, but you&#8217;d have to write ad hoc map reduce statements every time you needed data which is not really what it&#8217;s for.  Map reduce is really for batch processing of data, not real-time application access to the database. You can also add Lucene to Riak to do full text search of data, but again, this isn&#8217;t really what we want.</p>
-
-<p>The simplest example of why Riak doesn&#8217;t cut it is there&#8217;s really no notion of a collection of Objects. Riak has buckets, but this is really just a string key they add to your actual key. You can&#8217;t ask Riak for all the things in X bucket. It still has to sort through every key in the db to see if it matches the string &#8220;X&#8221;. For this same reason, you can&#8217;t count all the objects in a bucket. Riak does have the notion of relationships through &#8220;linking&#8221; but this really works more like a graph db than traditional relationships as we think of them in the SQL world.</p>
-
-<p>The best way to think of Riak is a key-value store on steroids. It deals really well with distributed storage and replication, fails gracefully, and allows you to tune the AC part of CAP to your heart&#8217;s content.</p>
 </div>
   
+  
+    <footer>
+      <a rel="full-article" href="/blog/2013/07/09/learning-riak/">Read on &rarr;</a>
+    </footer>
   
 
 
@@ -244,102 +219,13 @@
 <p>Copied from http://jasonrudolph.com/blog/2011/08/09/programming-achievements-how-to-level-up-as-a-developer/</p>
 
 <ol>
-<li><p>Identify the experiences that advance a person as a developer.</p></li>
-<li><p>Select a particular experience to pursue.</p></li>
-<li><p>Pursue that experience to completion. (Achievement unlocked!)</p></li>
-<li><p>Reflect on that experience. Really soak it in. [A]</p></li>
-<li><p>Return to Step 2, this time selecting a new experience.</p></li>
-</ol>
-
-
-<p><strong>Learn a variety of <a href="http://en.wikipedia.org/wiki/Programming_paradigm">programming paradigms</a>:</strong></p>
-
-<ul>
-<li><p>Write a program in assembly language</p></li>
-<li><p>Write an application in a functional language</p></li>
-<li><p>Write an application in an object-oriented language</p></li>
-<li><p>Write an application in a prototype-based language</p></li>
-<li><p>Write an application in a logic programming language</p></li>
-<li><p>Write an application using the Actor model</p></li>
-<li><p>Write an application in Forth [C]</p></li>
-</ul>
-
-
-<p><strong>Experience the ins and outs of programming for different platforms:</strong></p>
-
-<ul>
-<li><p>Write a nontrivial web app</p></li>
-<li><p>Write a nontrivial desktop app</p></li>
-<li><p>Write a nontrivial mobile app</p></li>
-<li><p>Write an embedded app</p></li>
-<li><p>Write a realtime system</p></li>
-</ul>
-
-
-<p><strong>Enhance your understanding of the building blocks that we use as developers:</strong></p>
-
-<ul>
-<li><p>Write a networking client (e.g., HTTP, FTP)</p></li>
-<li><p>Write a device driver</p></li>
-<li><p>Write a B-tree database</p></li>
-<li><p>Wrap an existing library to provide a better (more pleasant) user experience</p></li>
-<li><p>Write an application or framework that provides a plugin model</p></li>
-<li><p>Write a testing framework</p></li>
-<li><p>Write a programming language</p></li>
-</ul>
-
-
-<p><strong>Enlighten yourself with koans, katas, and the wisdom of ages:</strong></p>
-
-<ul>
-<li><p>Complete five <a href="http://en.wikipedia.org/wiki/Kata_(programming">code katas</a>)</p></li>
-<li><p>Complete the <a href="http://sett.ociweb.com/sett/settJan2011.html">programming koans</a> for a language that you want to learn</p></li>
-<li><p>Attend a <a href="http://coderetreat.com/">code retreat</a></p></li>
-<li><p>Read <a href="http://mitpress.mit.edu/sicp/">SICP</a> and complete all the exercises</p></li>
-</ul>
-
-
-<p><strong>Program in the open:</strong></p>
-
-<ul>
-<li><p>Contribute to an open source project</p></li>
-<li><p>Have a patch accepted</p></li>
-<li><p>Earn commit rights on a significant open source project</p></li>
-<li><p>Publish an open source project</p></li>
-<li><p>Perform a <a href="http://thinkrelevance.com/blog/2007/04/03/twir.html">Refactotum</a> of an open source project</p></li>
-</ul>
-
-
-<p><strong>Learn by teaching others [D]:</strong></p>
-
-<ul>
-<li><p>Present a lightning talk</p></li>
-<li><p>Present at a local user group</p></li>
-<li><p>Present at a conference</p></li>
-<li><p>Deliver a training course</p></li>
-<li><p>Publish a tutorial</p></li>
-<li><p>Publish a constructive code review of an open source project</p></li>
-<li><p>Write a programming book</p></li>
-</ul>
-
-
-<h2>About the Achievements</h2>
-
-<p>Now, let&#8217;s go meta for a moment. Note that each of these achievements is measurable. Each one is Boolean: you&#8217;ve either completed it or you haven&#8217;t. For example, it&#8217;s hard to measure whether you&#8217;ve learned a functional language, but it&#8217;s easy to know whether you&#8217;ve written an app in a functional language. The latter is observable. Measurable. Boolean. This measurability applies, quite intentionally, to all of these achievements.</p>
-
-<p>Admittedly, the measurability isn&#8217;t perfect. Consider the achievement of presenting at a conference: you could certainly do a half-assed job just to say you&#8217;ve earned this achievement. But if you&#8217;re reading this post, I assume you want to be excellent. You know that it&#8217;s lame to phone it in just to cross an item off the list.</p>
-
-<h2>Since We&#8217;re Talking About Improvement &#8230;</h2>
-
-<p>Since we&#8217;re talking about improvement, what would you change about this list?</p>
-
-<p>The list is available as a <a href="https://gist.github.com/1133830#file_programming_achievements.md">gist</a> on GitHub. Feel free to fork it and add more achievements. (Make sure they&#8217;re measurable.)</p>
-
-<p>Or, fork it and mark off the achievements you&#8217;ve already conquered. You might even flag the one that you&#8217;re currently working on. (For example, check out these forks from <a href="https://gist.github.com/1134309">Justin Blake</a>, <a href="https://gist.github.com/1134276">Pierre Chapuis</a>, and <a href="https://gist.github.com/1134044">Yann Esposito</a>.) [E]</p>
-
-<p>Or just sound off in the comments: What experiences have made you a better developer? And what achievement will you unlock next?</p>
+<li><p>Identify the experiences that advance a person as a developer.
 </div>
   
+  
+    <footer>
+      <a rel="full-article" href="/blog/2012/12/05/programming-growth-list-of-achievements/">Read on &rarr;</a>
+    </footer>
   
 
 
@@ -394,21 +280,12 @@
 
 <p>via Programming, found on <a href="https://twitter.com/wyattdanger">@wyattdanger</a>‘s blog <a href="http://blog.stephenwyattbush.com/2012/04/07/dad-and-the-ten-commandments-of-egoless-programming">post</a> on receiving advice from his dad:</p>
 
-<ol>
-<li><p><strong>Understand and accept that you will make mistakes.</strong> The point is to find them early, before they make it into production. Fortunately, except for the few of us developing rocket guidance software at JPL, mistakes are rarely fatal in our industry. We can, and should, learn, laugh, and move on.</p></li>
-<li><p><strong>You are not your code.</strong> Remember that the entire point of a review is to find problems, and problems will be found. Don’t take it personally when one is uncovered. <em>(Allspaw note – related: see below, number #10, and the points Theo made above.)</em></p></li>
-<li><p><strong>No matter how much “karate” you know, someone else will always know more.</strong> Such an individual can teach you some new moves if you ask. Seek and accept input from others, especially when you think it’s not needed.</p></li>
-<li><p><strong>Don’t rewrite code without consultation.</strong> There’s a fine line between “fixing code” and “rewriting code.” Know the difference, and pursue stylistic changes within the framework of a code review, not as a lone enforcer.</p></li>
-<li><p><strong>Treat people who know less than you with respect, deference, and patience.</strong> Non-technical people who deal with developers on a regular basis almost universally hold the opinion that we are prima donnas at best and crybabies at worst. Don’t reinforce this stereotype with anger and impatience.</p></li>
-<li><p><strong>The only constant in the world is change. Be open to it and accept it with a smile.</strong> Look at each change to your requirements, platform, or tool as a new challenge, rather than some serious inconvenience to be fought.</p></li>
-<li><p><strong>The only true authority stems from knowledge, not from position.</strong> Knowledge engenders authority, and authority engenders respect – so if you want respect in an egoless environment, cultivate knowledge.</p></li>
-<li><p><strong>Fight for what you believe, but gracefully accept defeat.</strong> Understand that sometimes your ideas will be overruled. Even if you are right, don’t take revenge or say “I told you so.” Never make your dearly departed idea a martyr or rallying cry.</p></li>
-<li><p><strong>Don’t be “the coder in the corner.”</strong> Don’t be the person in the dark office emerging only for soda. The coder in the corner is out of sight, out of touch, and out of control. This person has no voice in an open, collaborative environment. Get involved in conversations, and be a participant in your office community.</p></li>
-<li><p><strong>Critique code instead of people – be kind to the coder, not to the code.</strong> As much as possible, make all of your comments positive and oriented to improving the code. Relate comments to local standards, program specs, increased performance, etc.</p></li>
-</ol>
-
 </div>
   
+  
+    <footer>
+      <a rel="full-article" href="/blog/2012/12/05/ten-commandments-of-programming/">Read on &rarr;</a>
+    </footer>
   
 
 
@@ -459,17 +336,12 @@
   </header>
 
 
-  <div class="entry-content"><p>We did an interesting exercise  the other day at Hacker School.  We sat in a group and wrote down all the things that scare us about programming.  The list ended up being something like 50 items long.  For a bunch of really smart and relatively successful programmers, we are steeped in fear.  And it&#8217;s that fear that keeps us from getting better, rather than a lack of intelligence.  It&#8217;s fear that keeps us from reaching just about any goal or realizing any potential within us.  It amazes me that despite facing my fears day in and day out for the past 18 months of this programming journey, I still find myself avoiding things that scare me.  When things don&#8217;t make sense, rather than slowing down and attacking the fuzziness, I skip ahead so I don&#8217;t have to confront that which challenges me.  Yes of course I get it, I just don&#8217;t want to write any sample code to verify that I get it because that might irrefutably prove that I DONT FUCKING GET IT.  How many hours, weeks, months have been wasted because I didn&#8217;t buckle down and attack the things that were fuzzy.  I have forced myself to always come back to things that I don&#8217;t understand, but have often taken huge breaks in between swings at those problems because facing those demons is more uncomfortable than just about any other thing I could do in any given day.  And yet leaning into the pain and fear is where all the value is.  It&#8217;s how we become better programmers.  It&#8217;s how we become better at anything in life.  I&#8217;ve watched friends do everything but the one thing that would get them to their stated goal.  Just pick up the phone and call her already&#8230;And yet despite the myriad of demons I&#8217;ve confronted over the last 10 years, there&#8217;s still that Lizard brain telling me that I can&#8217;t do it.  That I&#8217;m stupid, and not smart enough to be doing this.  That one of these days someone is going to pull back the curtain and reveal the scared little boy who has been pretending to be something he&#8217;s not.  And THEN I&#8217;ll be sorry.  Therein lies the value of hacker school.  They&#8217;ve created an environment where the stated goal is to pull the curtain back, and to let the sun shine on our hideous naked bodies.  We can celebrate the fact that we don&#8217;t know, and then get to the knowing.  We can all be at that point freshman year of college where no one knew anyone and we all were scared little kids and confront these demons together.  If Hacker School&#8217;s value was only that, it would be worth it.  Hacker School&#8217;s value far exceeds just that though.  They have created an environment that&#8217;s no only safe to learn, but where learning flourishes.  One thing that is beaten into us is focus.  Work on one thing until you understand it, and don&#8217;t stop until you understand it.  And while you&#8217;re trying to understand it, make sure you know what it is you are trying to understand, and that what you are doing to understand it is a good way to get that understanding.  Focus on one thing, and push through the fuzziness until you get to clarity.</p>
-
-<p>Most people tend to attribute positive things about themselves to internal characteristics, and negative things to environmental or circumstantial factors.  They then reverse it when looking at other people.  I think the reality is that environmental factors play a significantly larger role than any of us would like to imagine (great speech by Michael Lewis on this topic http://www.youtube.com/watch?v=CiQ_T5C3hIM).  Why most of us are where we are today be it &#8220;successful&#8221; or not is largely a result of the environments we&#8217;ve been placed in.  I did well in school because my parents expected that I would do well in school and would make my life a living hell if that did not happen.  Had I been left to my own devices I would have optimized my life for the short term (probably a week to week calculus when you&#8217;re younger) rather than a long term that at least pointed towards college.  It&#8217;s pretty incredible to sit here at 29 and look back at how stupid I was at 18, or 16, or 14.  At this point in my life, I feel like I&#8217;ve started to figure things out, which scares me a little bit because when I look back at the times in my life where I thought I had it figured out, it was when I was stupidest.  Donald Rumsfeld famously said, &#8220;there are known knowns, known unknowns and unknown unknowns&#8221;.  When you&#8217;re young, that graph probably looks like 98% unknown unknowns.  You can&#8217;t even conceive of how monumentally stupid you really are.  As you start to get a little bit of knowledge, you start to feel like you&#8217;ve got it figured out, hence the expression &#8220;a little knowledge is a dangerous thing&#8221;.  I feel immeasurably lucky to have made it this far in life without monumentally fucking my life up.  Thank god for parents who forced me to do shit I didn&#8217;t want to do until I reached a point where I could figure that out on my own with a much lower risk.  I wish there was a way for young people to go out and explore the world BEFORE they waste so much money on college.  You have such little idea about the world before you start to work it is almost impossible to derive any value from the things laid at your feet at such a young age (and by that I mean us privileged kids).</p>
-
-<p><em>It&#8217;s</em> a great <em>thing when you realize you still have the ability to surprise yourself</em></p>
-
-<p>-Lester in American Beauty</p>
-
-<p>That said, It&#8217;s never too late to change your life.  Education is wasted on the young, but once you start to grow up, you start to get a sense of how you might want to spend your life.  For many people this comes after hundreds of thousands of dollars have been wasted on their education.  They feel trapped, like it&#8217;s too late to change.  It&#8217;s not too late to change.  It&#8217;s never too late to change.  I started this journey at 27 and am now 29 years old.  Ancient in programming years, and I have far to go to reach the promised land.  Every step of the journey has been tough, and yet there&#8217;s never been a more rewarding time in my life.</p>
-</div>
+  <div class="entry-content"><p>We did an interesting exercise  the other day at Hacker School.  We sat in a group and wrote down all the things that scare us about programming.  The list ended up being something like 50 items long.  For a bunch of really smart and relatively successful programmers, we are steeped in fear.  And it&#8217;s that fear that keeps us from getting better, rather than a lack of intelligence.  It&#8217;s fear that keeps us from reaching just about any goal or realizing any potential within us.  It amazes me that despite facing my fears day in and day out for the past 18 months of this programming journey, I still find myself avoiding things that scare me.  </div>
   
+  
+    <footer>
+      <a rel="full-article" href="/blog/2012/10/21/becoming-better-means-facing-your-fears/">Read on &rarr;</a>
+    </footer>
   
 
 
@@ -525,28 +397,14 @@
 <p>So here&#8217;s my list of things I&#8217;m lovin:</p>
 
 <ul>
-<li><p>The NYC Tech Community</p></li>
-<li><p>Rails/Ruby mentors - Dan/Dave/Snuggs/Avi/John Nunemaker</p></li>
-<li><p>Meetup.com - Probably one of the biggest drivers of positive change in my life.</p></li>
-<li><p>Ruby</p></li>
-<li><p>Waking up every morning and being excited to go to work.  Living to program/Dreaming in code.</p></li>
-<li><p>Limitless possibilities</p></li>
-<li><p>Endlessly working to push myself forward, but at the same time being happy where I am.  Having enough (maybe except time)</p></li>
-<li><p>The internet and the rise of essentially limitless information coupled with strong communities on the net.  In about 3 months of 60-80 hour weeks coding, I went from 0 to full time employed programmer.  Through stackoverflow, blogs, railsguides, the pragmatic programmers books and leaning on some Ruby Nuby friends and a lot of blood sweat and tears I was able to teach myself to Ruby.  I can&#8217;t imagine there was ever a point in human history when one could self educate in such a way.  Truly a phenomenal time and place we live in.</p></li>
-<li><p>Stackoverflow (the first place I go for just about every question)</p></li>
-<li><p>Open source (where do I begin?)</p></li>
-<li><p>Github (democratizing the world through software)</p></li>
-<li><p>OS X (having the terminal baked into the OS is awesome)</p></li>
-<li><p>My Iphone (just joined the cult a few months ago)</p></li>
-<li><p>My magic mouse, macbook pro, and two 24 inch beasts in my home office.</p></li>
-<li><p>Watching Emma realize that all her limitations are self imposed.</p></li>
-<li><p>The ability to surprise and reinvent myself.</p></li>
-<li><p>Working hard for the first time in my life.  Seeing what&#8217;s possible when I don&#8217;t quit.  Starting to tap my potential for the first time.</p></li>
-<li><p>Taking the long view for the first time in my life.  Hat tip ceonyc http://www.thisisgoingtobebig.com/blog/2011/12/5/reverse-engineering-a-career.html</p></li>
-</ul>
+<li><p>The NYC Tech Community</p>
 
-</div>
+<p></div>
   
+  
+    <footer>
+      <a rel="full-article" href="/blog/2012/03/01/thing-im-lovin-hat-tip-gvitty-in-the-city/">Read on &rarr;</a>
+    </footer>
   
 
 
@@ -599,19 +457,12 @@
 
   <div class="entry-content"><p>2012 is the first year I feel like I am ready to jump into with both feet. To steal Brett Martin&#8217;s word, I&#8217;ve never felt more ready to crush it. 2011 was the year I finally taught myself how to program, and to quote Hilary Mason of Bitly, &#8220;teaching someone to program is like giving them superpowers&#8221;. I&#8217;ve never felt so empowered. I go to sleep every day feeling like I used to when I was a kid the night before Christmas, barely able to contain my excitement for the day awaiting me. The world seems filled with limitless possibilities. However, I want to take some time and reflect on how I got to where I am today.</p>
 
-<p>I&#8217;ll never forget my senior winter at Dartmouth. Russ, Griffin and Darnell were all living in NYC ostensibly living the life that everyone dreams of. Griffin was interning at some bulge bracket bank I think doing ibanking, and Russ and Darnell were working at some generic corporate law firm. They were making lots of money, and enjoying all that the best city in the world had to offer. And yet when I talked to them about it, they didn&#8217;t seem very happy. In fact almost no one I knew who lived in NYC post Dartmouth seemed happy. Plenty of people had &#8220;great jobs&#8221; in finance and all the other industries we are programmed to aspire to from birth. Why didn&#8217;t anyone like their jobs? We were the best and the brightest, and could have any jobs we wanted, and this was the best the world had to offer&#8230;I couldn&#8217;t help thinking, is this it?</p>
-
-<p>It&#8217;s been really surprising to me to see where people have ended up 5 years out of college. I&#8217;m amazed how large a role luck/inertia have on peoples lives. We do what we&#8217;ve been programmed to do. People don&#8217;t seem to make many active choices. Dartmouth kids see their peers go into consulting, banking, law and medicine. Recruiters come to Dartmouth from certain industries, and so those industries become filled with Dartmouth students. After about 5 years of working, everyone starts going back to school to further delay making any choices in their life. They can spend two years in business school and then go work for whomever it is that recruits them without having to do any thinking for themselves.</p>
-
-<p>One of the things that&#8217;s been important to me, is choosing my life. Even if I make the wrong, or imperfect choice, I want it to be my own. I couldn&#8217;t do the corporate recruiting thing and then go work for whomever picked me. I had to choose for myself. After graduating from Dartmouth, for the first time in my life, I had complete latitude to do anything I wanted. I&#8217;d always dreamed of moving to a beautiful place close to the beach where it was Summer year round. After spending a Summer saving up some money working for DDS, I bought a one way ticket to Hawaii with no job, place to live or any friends. It was the most exhilarating thing I&#8217;d ever done, and I couldn&#8217;t wait to start my life.</p>
-
-<p>Hawaii was an amazing experience, filled with challenges, setbacks and many successes. I spent months working horrible temp jobs. That taught me some humility. I also had the experience of starting from the bottom at a large corporation and working my way up. You get a very different perspective when you&#8217;re in the trenches with &#8220;the common man&#8221; (I hope that doesn&#8217;t sound too arrogant). After spending a few months entering telecom orders manually, I became the SME on our billing system and the only one in a corporation of multiple thousand people who had any idea how the IT systems we relied on worked. I began to speak Kenan, CRM, TIBCO and telecom fluenty and became the lead product developer (on the billing side) working alongside the consultants at Bearing Point and Accenture. By the time left, I had worked on teams filled with people at the Director level and above, hired a team of 10 people to work for me, and had my first terrible experience of firing people that didn&#8217;t work out. At some point, Hawaii felt like it was stifling my growth, and I left for greener pastures in NYC.</p>
-
-<p>I was incredibly lucky to get hired by Byron and Jeb at Proto software which was one of the best experiences of my life. Proto infected me with both the startup and programming bugs. Luckily I had picked up SQL at Hawaiian Telcom, and at Proto I mastered Excel, the basic concepts of programming and application/software development. I was also lucky enough to meet the Abadi&#8217;s which turned into a 2 year freelance consulting gig which allowed me the freedom to take an almost year long world trip.</p>
-
-<p>I&#8217;m amazed that at 26 I had the wherewithall to negotiate an arrangement that allowed me the freedom to do all the things I had dreamed of doing my whole life. Over the course of a year I visited almost every &#8220;great&#8221; city of the world, and touched every continent except Africa and Antartica. It&#8217;s hard to believe what I&#8217;ve achieved since I left the &#8220;tiny&#8221; town of West Hartford almost 10 years ago. It&#8217;s even harder to believe that I&#8217;ve done so with so many nagging insecurities.</p>
 </div>
   
+  
+    <footer>
+      <a rel="full-article" href="/blog/2012/01/02/crush-it/">Read on &rarr;</a>
+    </footer>
   
 
 
@@ -733,20 +584,15 @@
 
 <ol>
 <li>The Art of Non-Conformity - Chris Guillebeau</li>
-<li>Unlimited Power - Tony Robbins (Go ahead, roll your eyes Byran, and then get over yourself and read it)</li>
-<li>Influence - Robert Cialdini</li>
-<li>Linchpin - Seth Godin</li>
-<li>Ignore Everybody - Hugh MacLeod</li>
-<li>How to Win Friends and Influence People</li>
-<li>Rework</li>
 </ol>
 
 
-<p>In a separate category of good, but not necessarily epic
-1. Never Eat Alone - Keith Ferazzi
-2. The 4 Hour WW - Tim Ferris</p>
 </div>
   
+  
+    <footer>
+      <a rel="full-article" href="/blog/2011/01/11/life-changing-reading/">Read on &rarr;</a>
+    </footer>
   
 
 

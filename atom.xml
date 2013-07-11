@@ -4,7 +4,7 @@
   <title><![CDATA[Never Graduate]]></title>
   <link href="http://blake41.github.com/consistentactions/atom.xml" rel="self"/>
   <link href="http://blake41.github.com/consistentactions/"/>
-  <updated>2013-07-10T15:32:15-04:00</updated>
+  <updated>2013-07-11T09:35:15-04:00</updated>
   <id>http://blake41.github.com/consistentactions/</id>
   <author>
     <name><![CDATA[Blake Johnson]]></name>
@@ -21,6 +21,9 @@
     <content type="html"><![CDATA[<p>The Flatiron School just started allowing us to order any programming book we want (as long as we explain why it might be useful), so I decided to take full advantage and explore the world of &#8220;NoSQL&#8221; by reading the Riak handbook over the long weekend.</p>
 
 <p>My general sense of people using &#8220;NoSQL&#8221; data stores was that in 95% of use cases a RDBMS made more sense. But, as long as Mongo stayed hip, people would blindly use it. I wanted to answer this question for myself: If your data is relational, does it make sense to use Mongo?</p>
+
+<!--more-->
+
 
 <p>This whole line of inquiry eventually led me to the CAP theorem and Riak.  Around 2000, Eric Brewer came out with his paper/conjecture called the CAP Theorem <a href="http://www.cs.berkeley.edu/~brewer/cs262b-2004/PODC-keynote.pdf">Brewer Paper</a>. The CAP Theorem was eventually proved and started a lot of the discussions around NoSQL. CAP Theroem essentially says that in any distributed system you can&#8217;t have consistency (c), availability (a), and partition tolerance (p) all at the same time: You can only choose two out of the three.</p>
 
@@ -64,7 +67,8 @@
 <p>Copied from http://jasonrudolph.com/blog/2011/08/09/programming-achievements-how-to-level-up-as-a-developer/</p>
 
 <ol>
-<li><p>Identify the experiences that advance a person as a developer.</p></li>
+<li><p>Identify the experiences that advance a person as a developer.
+<!--more--></p></li>
 <li><p>Select a particular experience to pursue.</p></li>
 <li><p>Pursue that experience to completion. (Achievement unlocked!)</p></li>
 <li><p>Reflect on that experience. Really soak it in. [A]</p></li>
@@ -170,6 +174,9 @@
 
 <p>via Programming, found on <a href="https://twitter.com/wyattdanger">@wyattdanger</a>‘s blog <a href="http://blog.stephenwyattbush.com/2012/04/07/dad-and-the-ten-commandments-of-egoless-programming">post</a> on receiving advice from his dad:</p>
 
+<!--more-->
+
+
 <ol>
 <li><p><strong>Understand and accept that you will make mistakes.</strong> The point is to find them early, before they make it into production. Fortunately, except for the few of us developing rocket guidance software at JPL, mistakes are rarely fatal in our industry. We can, and should, learn, laugh, and move on.</p></li>
 <li><p><strong>You are not your code.</strong> Remember that the entire point of a review is to find problems, and problems will be found. Don’t take it personally when one is uncovered. <em>(Allspaw note – related: see below, number #10, and the points Theo made above.)</em></p></li>
@@ -191,7 +198,7 @@
     <link href="http://blake41.github.com/consistentactions/blog/2012/10/21/becoming-better-means-facing-your-fears/"/>
     <updated>2012-10-21T19:11:03-04:00</updated>
     <id>http://blake41.github.com/consistentactions/blog/2012/10/21/becoming-better-means-facing-your-fears</id>
-    <content type="html"><![CDATA[<p>We did an interesting exercise  the other day at Hacker School.  We sat in a group and wrote down all the things that scare us about programming.  The list ended up being something like 50 items long.  For a bunch of really smart and relatively successful programmers, we are steeped in fear.  And it&#8217;s that fear that keeps us from getting better, rather than a lack of intelligence.  It&#8217;s fear that keeps us from reaching just about any goal or realizing any potential within us.  It amazes me that despite facing my fears day in and day out for the past 18 months of this programming journey, I still find myself avoiding things that scare me.  When things don&#8217;t make sense, rather than slowing down and attacking the fuzziness, I skip ahead so I don&#8217;t have to confront that which challenges me.  Yes of course I get it, I just don&#8217;t want to write any sample code to verify that I get it because that might irrefutably prove that I DONT FUCKING GET IT.  How many hours, weeks, months have been wasted because I didn&#8217;t buckle down and attack the things that were fuzzy.  I have forced myself to always come back to things that I don&#8217;t understand, but have often taken huge breaks in between swings at those problems because facing those demons is more uncomfortable than just about any other thing I could do in any given day.  And yet leaning into the pain and fear is where all the value is.  It&#8217;s how we become better programmers.  It&#8217;s how we become better at anything in life.  I&#8217;ve watched friends do everything but the one thing that would get them to their stated goal.  Just pick up the phone and call her already&#8230;And yet despite the myriad of demons I&#8217;ve confronted over the last 10 years, there&#8217;s still that Lizard brain telling me that I can&#8217;t do it.  That I&#8217;m stupid, and not smart enough to be doing this.  That one of these days someone is going to pull back the curtain and reveal the scared little boy who has been pretending to be something he&#8217;s not.  And THEN I&#8217;ll be sorry.  Therein lies the value of hacker school.  They&#8217;ve created an environment where the stated goal is to pull the curtain back, and to let the sun shine on our hideous naked bodies.  We can celebrate the fact that we don&#8217;t know, and then get to the knowing.  We can all be at that point freshman year of college where no one knew anyone and we all were scared little kids and confront these demons together.  If Hacker School&#8217;s value was only that, it would be worth it.  Hacker School&#8217;s value far exceeds just that though.  They have created an environment that&#8217;s no only safe to learn, but where learning flourishes.  One thing that is beaten into us is focus.  Work on one thing until you understand it, and don&#8217;t stop until you understand it.  And while you&#8217;re trying to understand it, make sure you know what it is you are trying to understand, and that what you are doing to understand it is a good way to get that understanding.  Focus on one thing, and push through the fuzziness until you get to clarity.</p>
+    <content type="html"><![CDATA[<p>We did an interesting exercise  the other day at Hacker School.  We sat in a group and wrote down all the things that scare us about programming.  The list ended up being something like 50 items long.  For a bunch of really smart and relatively successful programmers, we are steeped in fear.  And it&#8217;s that fear that keeps us from getting better, rather than a lack of intelligence.  It&#8217;s fear that keeps us from reaching just about any goal or realizing any potential within us.  It amazes me that despite facing my fears day in and day out for the past 18 months of this programming journey, I still find myself avoiding things that scare me.  <!--more-->When things don&#8217;t make sense, rather than slowing down and attacking the fuzziness, I skip ahead so I don&#8217;t have to confront that which challenges me.  Yes of course I get it, I just don&#8217;t want to write any sample code to verify that I get it because that might irrefutably prove that I DONT FUCKING GET IT.  How many hours, weeks, months have been wasted because I didn&#8217;t buckle down and attack the things that were fuzzy.  I have forced myself to always come back to things that I don&#8217;t understand, but have often taken huge breaks in between swings at those problems because facing those demons is more uncomfortable than just about any other thing I could do in any given day.  And yet leaning into the pain and fear is where all the value is.  It&#8217;s how we become better programmers.  It&#8217;s how we become better at anything in life.  I&#8217;ve watched friends do everything but the one thing that would get them to their stated goal.  Just pick up the phone and call her already&#8230;And yet despite the myriad of demons I&#8217;ve confronted over the last 10 years, there&#8217;s still that Lizard brain telling me that I can&#8217;t do it.  That I&#8217;m stupid, and not smart enough to be doing this.  That one of these days someone is going to pull back the curtain and reveal the scared little boy who has been pretending to be something he&#8217;s not.  And THEN I&#8217;ll be sorry.  Therein lies the value of hacker school.  They&#8217;ve created an environment where the stated goal is to pull the curtain back, and to let the sun shine on our hideous naked bodies.  We can celebrate the fact that we don&#8217;t know, and then get to the knowing.  We can all be at that point freshman year of college where no one knew anyone and we all were scared little kids and confront these demons together.  If Hacker School&#8217;s value was only that, it would be worth it.  Hacker School&#8217;s value far exceeds just that though.  They have created an environment that&#8217;s no only safe to learn, but where learning flourishes.  One thing that is beaten into us is focus.  Work on one thing until you understand it, and don&#8217;t stop until you understand it.  And while you&#8217;re trying to understand it, make sure you know what it is you are trying to understand, and that what you are doing to understand it is a good way to get that understanding.  Focus on one thing, and push through the fuzziness until you get to clarity.</p>
 
 <p>Most people tend to attribute positive things about themselves to internal characteristics, and negative things to environmental or circumstantial factors.  They then reverse it when looking at other people.  I think the reality is that environmental factors play a significantly larger role than any of us would like to imagine (great speech by Michael Lewis on this topic http://www.youtube.com/watch?v=CiQ_T5C3hIM).  Why most of us are where we are today be it &#8220;successful&#8221; or not is largely a result of the environments we&#8217;ve been placed in.  I did well in school because my parents expected that I would do well in school and would make my life a living hell if that did not happen.  Had I been left to my own devices I would have optimized my life for the short term (probably a week to week calculus when you&#8217;re younger) rather than a long term that at least pointed towards college.  It&#8217;s pretty incredible to sit here at 29 and look back at how stupid I was at 18, or 16, or 14.  At this point in my life, I feel like I&#8217;ve started to figure things out, which scares me a little bit because when I look back at the times in my life where I thought I had it figured out, it was when I was stupidest.  Donald Rumsfeld famously said, &#8220;there are known knowns, known unknowns and unknown unknowns&#8221;.  When you&#8217;re young, that graph probably looks like 98% unknown unknowns.  You can&#8217;t even conceive of how monumentally stupid you really are.  As you start to get a little bit of knowledge, you start to feel like you&#8217;ve got it figured out, hence the expression &#8220;a little knowledge is a dangerous thing&#8221;.  I feel immeasurably lucky to have made it this far in life without monumentally fucking my life up.  Thank god for parents who forced me to do shit I didn&#8217;t want to do until I reached a point where I could figure that out on my own with a much lower risk.  I wish there was a way for young people to go out and explore the world BEFORE they waste so much money on college.  You have such little idea about the world before you start to work it is almost impossible to derive any value from the things laid at your feet at such a young age (and by that I mean us privileged kids).</p>
 
@@ -213,7 +220,9 @@
 <p>So here&#8217;s my list of things I&#8217;m lovin:</p>
 
 <ul>
-<li><p>The NYC Tech Community</p></li>
+<li><p>The NYC Tech Community</p>
+
+<p><!--more--></p></li>
 <li><p>Rails/Ruby mentors - Dan/Dave/Snuggs/Avi/John Nunemaker</p></li>
 <li><p>Meetup.com - Probably one of the biggest drivers of positive change in my life.</p></li>
 <li><p>Ruby</p></li>
@@ -242,6 +251,9 @@
     <updated>2012-01-02T05:20:22-05:00</updated>
     <id>http://blake41.github.com/consistentactions/blog/2012/01/02/crush-it</id>
     <content type="html"><![CDATA[<p>2012 is the first year I feel like I am ready to jump into with both feet. To steal Brett Martin&#8217;s word, I&#8217;ve never felt more ready to crush it. 2011 was the year I finally taught myself how to program, and to quote Hilary Mason of Bitly, &#8220;teaching someone to program is like giving them superpowers&#8221;. I&#8217;ve never felt so empowered. I go to sleep every day feeling like I used to when I was a kid the night before Christmas, barely able to contain my excitement for the day awaiting me. The world seems filled with limitless possibilities. However, I want to take some time and reflect on how I got to where I am today.</p>
+
+<!--more-->
+
 
 <p>I&#8217;ll never forget my senior winter at Dartmouth. Russ, Griffin and Darnell were all living in NYC ostensibly living the life that everyone dreams of. Griffin was interning at some bulge bracket bank I think doing ibanking, and Russ and Darnell were working at some generic corporate law firm. They were making lots of money, and enjoying all that the best city in the world had to offer. And yet when I talked to them about it, they didn&#8217;t seem very happy. In fact almost no one I knew who lived in NYC post Dartmouth seemed happy. Plenty of people had &#8220;great jobs&#8221; in finance and all the other industries we are programmed to aspire to from birth. Why didn&#8217;t anyone like their jobs? We were the best and the brightest, and could have any jobs we wanted, and this was the best the world had to offer&#8230;I couldn&#8217;t help thinking, is this it?</p>
 
@@ -289,6 +301,13 @@
 
 <ol>
 <li>The Art of Non-Conformity - Chris Guillebeau</li>
+</ol>
+
+
+<!--more-->
+
+
+<ol>
 <li>Unlimited Power - Tony Robbins (Go ahead, roll your eyes Byran, and then get over yourself and read it)</li>
 <li>Influence - Robert Cialdini</li>
 <li>Linchpin - Seth Godin</li>

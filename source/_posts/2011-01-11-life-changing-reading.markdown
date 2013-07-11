@@ -12,6 +12,7 @@ I've been doing a lot of self improvement reading, in my attempt to give my life
 If you don't like self-help or business books, skip this post. However, if you are open to the possibility of growth through reading and altering your behavior, these books all have the power to change your life. (In no particular order)
 
 1. The Art of Non-Conformity - Chris Guillebeau
+<!--more-->
 2. Unlimited Power - Tony Robbins (Go ahead, roll your eyes Byran, and then get over yourself and read it)
 3. Influence - Robert Cialdini
 4. Linchpin - Seth Godin

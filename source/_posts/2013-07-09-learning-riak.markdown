@@ -10,7 +10,7 @@ categories:
 The Flatiron School just started allowing us to order any programming book we want (as long as we explain why it might be useful), so I decided to take full advantage and explore the world of "NoSQL" by reading the Riak handbook over the long weekend.
 
 My general sense of people using "NoSQL" data stores was that in 95% of use cases a RDBMS made more sense. But, as long as Mongo stayed hip, people would blindly use it. I wanted to answer this question for myself: If your data is relational, does it make sense to use Mongo?
-
+<!--more-->
 This whole line of inquiry eventually led me to the CAP theorem and Riak.  Around 2000, Eric Brewer came out with his paper/conjecture called the CAP Theorem [Brewer Paper](http://www.cs.berkeley.edu/~brewer/cs262b-2004/PODC-keynote.pdf). The CAP Theorem was eventually proved and started a lot of the discussions around NoSQL. CAP Theroem essentially says that in any distributed system you can't have consistency (c), availability (a), and partition tolerance (p) all at the same time: You can only choose two out of the three.
 
 Consistency means that if you have many nodes with the same data, and you read data from more than one at once, you should get the exact same result. Availability means that I should be able to read from all nodes at all times. Partition tolerance means that if nodes are physically separated from each other, usually by network problems, they should still be able to serve both reads and writes.  

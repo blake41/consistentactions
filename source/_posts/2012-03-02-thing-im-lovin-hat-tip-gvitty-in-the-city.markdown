@@ -16,7 +16,7 @@ So here's my list of things I'm lovin:
 	
   * The NYC Tech Community
 
-	
+	<!--more-->
   * Rails/Ruby mentors - Dan/Dave/Snuggs/Avi/John Nunemaker
 
 	

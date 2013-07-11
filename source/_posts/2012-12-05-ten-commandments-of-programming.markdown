@@ -12,7 +12,7 @@ Via http://www.kitchensoap.com/2012/10/25/on-being-a-senior-engineer/
 via Programming, found on [@wyattdanger](https://twitter.com/wyattdanger)‘s blog [post](http://blog.stephenwyattbush.com/2012/04/07/dad-and-the-ten-commandments-of-egoless-programming) on receiving advice from his dad:
 
 
-
+<!--more-->
 	
   1. **Understand and accept that you will make mistakes.** The point is to find them early, before they make it into production. Fortunately, except for the few of us developing rocket guidance software at JPL, mistakes are rarely fatal in our industry. We can, and should, learn, laugh, and move on.
 

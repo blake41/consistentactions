@@ -15,7 +15,7 @@ Copied from http://jasonrudolph.com/blog/2011/08/09/programming-achievements-ho
 
 	
   1. Identify the experiences that advance a person as a developer.
-
+  <!--more-->
 	
   2. Select a particular experience to pursue.
 
